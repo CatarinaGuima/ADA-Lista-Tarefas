@@ -1,0 +1,118 @@
+/* Estilos Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  main {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #864ea5;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo do Formulário */
+  form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+    transition: border-color 0.3s;
+  }
+  
+  input[type="text"]:focus {
+    border-color: #864ea5;
+  }
+  
+  button {
+    padding: 10px 15px;
+    background-color: #864ea5;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color:#864ea5;
+  }
+  
+  /* Estilo da Lista de Tarefas */
+  ul {
+    list-style: none;
+  }
+  
+  li {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 2px solid #e0e0e0;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s;
+  }
+  
+  li:hover {
+    background-color: #f1f1f1;
+  }
+  
+  li.completed {
+    text-decoration: line-through;
+    color: #888;
+  }
+  
+  li button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #e74c3c;
+    font-size: 18px;
+  }
+  
+  li button:hover {
+    color: #c0392b;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 500px) {
+    body {
+      padding: 0 10px;
+    }
+  
+    main {
+      max-width: 100%;
+    }
+  }
+  
